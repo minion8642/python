@@ -87,5 +87,26 @@ elif health >= 20:
     print("Ваше здоровье низкое, будьте осторожны.")
 else:
     print("Ваше здоровье слишком низкое для выполнения миссии.")
-
+#Задание9
+inventory = ["яблоко", "шариковая ручка"]
+if 'ключ'in inventory and 'фонарь' in inventory:
+    print("Вы можете пройти через дверь")
+    elif 'ключ' not in inventory:
+        print("У вас нет ключа, вы не можете открыть дверь")
+        elif 'фонарь'not in inventory:
+            print("У вас нет фонаря, слишком темно, чтобы пройти")
+            else:
+                print("У вас нет ни  ключа, ни фонаря, вы не можете пройти через дверь")
+#Задание10:
+king = "Enemies are coming! Are the archers ready?"
+warrior = "For the Alliance!"
+magician = "The spell is ready."
+def check_ending(phrase):
+    if phrase[-1]== '?' or phrase[-2:]== '?!' or phrase[-1]== '!':
+        return True
+        else:
+            return False
+            print("king:", check_ending(king)) #True
+            print("warrior:",check_ending(warrior)) #False
+            print("magician:", check_ending(magician)) #False
 
