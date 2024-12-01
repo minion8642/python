@@ -1,0 +1,27 @@
+#Задание1
+def create_car(name: str, color: str, speed: int) -> str:
+    return f"Марка: {name} Цвет: {color} Максимальная скорость: {speed}"
+
+
+car1 = create_car("Лада", "Белый", 140)
+car2 = create_car("BMW", "Зелёный", 300)
+
+print(car1)
+print(car2)
+#Задание2
+def switch_check(switch: bool):
+    if switch == True:
+        print("True работает")
+    elif switch == False:
+        print("False не работает")
+    else:
+        print(f"{switch} сломан.")
+
+
+switch_1 = True
+switch_2 = False
+switch_3 = None
+
+switch_check(switch_1)
+switch_check(switch_2)
+switch_check(switch_3)
